@@ -74,6 +74,7 @@ GEM
       compass (>= 0.11.5)
       sassy-math (>= 1.2)
     multi_json (1.5.0)
+    newrelic_rpm (3.5.5.38)
     pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.3)
@@ -142,6 +143,7 @@ DEPENDENCIES
   compass-rails
   jquery-rails
   meta_request (= 0.2.1)
+  newrelic_rpm
   pg
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
