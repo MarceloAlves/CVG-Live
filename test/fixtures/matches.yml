@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: MyString
+  identifier: MyString
+  player1_id: 1
+  player2_id: 1
+  round: 1
+  state: MyString
+  tournament_id: 1
+  winner_id: 1
+  scores_csv: MyString
+
+two:
+  id: MyString
+  identifier: MyString
+  player1_id: 1
+  player2_id: 1
+  round: 1
+  state: MyString
+  tournament_id: 1
+  winner_id: 1
+  scores_csv: MyString

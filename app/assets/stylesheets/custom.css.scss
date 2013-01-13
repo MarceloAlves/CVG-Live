@@ -1,0 +1,43 @@
+body {
+	background: url('../assets/bg.jpg');
+	margin-top: 100px;
+}
+
+h1 {
+	color: #fff;
+}
+
+#lastmatch, #currentmatch, #nextmatch {
+	background: url('../assets/small-box.png') no-repeat top center;
+	min-height: 425px;
+	color: #fff;
+	text-align: center;
+	text-shadow: -1px -1px #000
+}
+
+.teamname {
+	font-size: 60px;
+	text-shadow: -1px -1px #000
+}
+
+.vs {
+	font-size: 80px
+}
+
+.hrseparatortop {
+	margin-bottom:0;
+	width: 300px;
+	margin-left: 60px;
+}
+
+.hrseparatorbottom {
+	margin-top:0px;
+	width: 300px;
+	margin-left: 60px;
+}
+
+.finalscore {
+	margin-top: 50px;
+	font-size: 24px;
+	text-shadow: -1px -1px #000;
+}
