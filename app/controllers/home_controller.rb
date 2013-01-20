@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 
 	if @tournamentlist.empty?
 		Match.get_matches('cvg_test')
-		@tournamentlist = Match.all.sort_by! {|a| [a.identifier.length, a.identifier]}
+		@tournamentlist = Match.where(:state => 'open').sort_by! {|a| [a.identifier.length, a.identifier]}
 	else
 	end
 

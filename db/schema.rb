@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130112200403) do
+ActiveRecord::Schema.define(:version => 20130112080052) do
 
   create_table "matches", :force => true do |t|
     t.string   "identifier"
@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(:version => 20130112200403) do
     t.datetime "updated_at",    :null => false
     t.string   "player1_name"
     t.string   "player2_name"
-    t.string   "last_update"
   end
 
 end
