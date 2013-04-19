@@ -20,6 +20,13 @@
 	
 	<!-- Included JS Files  -->
 	<%= javascript_include_tag "application" %>
+
+	<!-- Fav Icons -->
+	<%= favicon_link_tag 'favicon.ico' %>
+	<%= favicon_link_tag 'apple-touch-icon.png', :rel => 'apple-touch-icon', :type => 'image/png' %>
+	<%= favicon_link_tag 'apple-touch-icon-72x72.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '72x72' %>
+	<%= favicon_link_tag 'apple-touch-icon-114x114.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '114x114' %>
+	<%= favicon_link_tag 'apple-touch-icon-144x144.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '144x144' %>
   
   <%= csrf_meta_tags %>
 </head>
