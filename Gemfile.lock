@@ -57,6 +57,8 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     fssm (0.2.10)
+    haml (4.0.2)
+      tilt
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -144,6 +146,7 @@ DEPENDENCIES
   challonge-api
   coffee-rails (~> 3.2.1)
   compass-rails
+  haml (~> 4.0.2)
   jquery-rails
   meta_request (= 0.2.1)
   newrelic_rpm
