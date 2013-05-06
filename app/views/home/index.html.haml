@@ -1,43 +1,41 @@
 - provide(:title, 'Central Valley Gamers - Live')
 / Three-up Content Blocks
 .row
-  .nine.columns.offset-by-two= image_tag('cvg-logo.png')
-#lastmatch.four.columns
-  %h1 Last Match
-  Match - #{@previousmatch.identifier}
-  .teamname
-    Team #{@previousmatch.player1_name}
-  %hr.hrseparatortop/
-  .vs VS
-  %hr.hrseparatorbottom/
-  .teamname
-    Team #{@previousmatch.player2_name}
-  .finalscore
-    Final Score: #{@previousmatch.scores_csv}
-#currentmatch.four.columns
-  %h1 Current Match
-  Match - #{@tournamentlist[0].identifier}
-  .teamname
-    Team #{@tournamentlist[0].player1_name}
-  %hr.hrseparatortop/
-  .vs VS
-  %hr.hrseparatorbottom/
-  .teamname
-    Team #{@tournamentlist[0].player2_name}
-#nextmatch.four.columns
-  %h1 Next Match
-  Match - #{@tournamentlist[1].identifier}
-  .teamname
-    Team #{@tournamentlist[1].player1_name}
-  %hr.hrseparatortop/
-  .vs VS
-  %hr.hrseparatorbottom/
-  .teamname
-    Team #{@tournamentlist[1].player2_name}
+  .large-9.columns.large-offset-3= image_tag('cvg-logo.png', :width => 700)
+.row
+  #lastmatch.large-4.columns
+    %h1 Last Match
+    Match - #{@previousmatch.identifier}
+    .teamname
+      Team #{@previousmatch.player1_name}
+    %hr.hrseparatortop/
+    .vs VS
+    %hr.hrseparatorbottom/
+    .teamname
+      Team #{@previousmatch.player2_name}
+    .finalscore
+      Final Score: #{@previousmatch.scores_csv}
+  #currentmatch.large-4.columns
+    %h1 Current Match
+    Match - #{@tournamentlist[0].identifier}
+    .teamname
+      Team #{@tournamentlist[0].player1_name}
+    %hr.hrseparatortop/
+    .vs VS
+    %hr.hrseparatorbottom/
+    .teamname
+      Team #{@tournamentlist[0].player2_name}
+  #nextmatch.large-4.columns
+    %h1 Next Match
+    Match - #{@tournamentlist[1].identifier}
+    .teamname
+      Team #{@tournamentlist[1].player1_name}
+    %hr.hrseparatortop/
+    .vs VS
+    %hr.hrseparatorbottom/
+    .teamname
+      Team #{@tournamentlist[1].player2_name}
 / Footer
 %footer.row
-  .twelve.columns
+  .large-12.columns
     %hr/
-    .row
-      .six.columns
-        %p

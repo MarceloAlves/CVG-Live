@@ -1,28 +1,28 @@
-!!!
+!!! 5
 / paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-/[if lt IE 7 ] <html class="ie6" lang="en">
-/[if IE 7 ] <html class="ie7" lang="en">
-/[if IE 8 ] <html class="ie8" lang="en">
-/ [if (gte IE 9)|!(IE)]><!
-%html{:lang => "en"}
-  / <![endif]
-  %head
-    %meta{:charset => "utf-8"}/
-    / Uncomment to make IE8 render like IE7
-    / <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    / Set the viewport width to device width for mobile
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %title= content_for?(:title) ? yield(:title) : "Central Valley Gamers"
-    / Included CSS Files
-    = stylesheet_link_tag    "application"
-    / Included JS Files
-    = javascript_include_tag "application"
-    / Fav Icons
-    = favicon_link_tag 'favicon.ico'
-    = favicon_link_tag 'apple-touch-icon.png', :rel => 'apple-touch-icon', :type => 'image/png'
-    = favicon_link_tag 'apple-touch-icon-72x72.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '72x72'
-    = favicon_link_tag 'apple-touch-icon-114x114.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '114x114'
-    = favicon_link_tag 'apple-touch-icon-144x144.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '144x144'
-    = csrf_meta_tags
-  %body
-    = yield
+/[if lt IE 7 ] <html class=\"ie6\" lang=\"en\">
+/[if IE 7 ]    <html class=\"ie7\" lang=\"en\">
+/[if IE 8 ]    <html class=\"ie8\" lang=\"en\">
+/[if IE 9 ]    <html class=\"ie9\" lang=\"en\">
+/[if (gt IE 9)|!(IE)] <!--> <html lang=\"en\">
+
+%head
+  %meta{ :charset => "utf-8" }
+
+  -# Uncomment to make IE8 render like IE7
+  -# meta http-equiv="X-UA-Compatible" content="IE=7"
+
+  -# Set the viewport width to device width for mobile
+  %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+
+  %title= content_for?(:title) ? yield(:title) : "Untitled"
+
+  = stylesheet_link_tag "application"
+  = javascript_include_tag "vendor/custom.modernizr"
+  = csrf_meta_tag
+
+%body
+
+  = yield
+
+  = javascript_include_tag "application"
